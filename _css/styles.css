@@ -1,0 +1,136 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #222;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* Frame Navbar */
+
+.fixed-nav-bar {
+    position: fixed;
+    color: #F1F1F1;
+    padding: 0px 25px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 56px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid gray;
+    background: #303641;
+    -webkit-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+}
+
+#preview {
+    margin-top: 55px;
+    border: none;
+}
+
+
+/* Logo */
+
+.logo {
+    float: left;
+    margin-right: 20px;
+    margin-top: 9px;
+    max-width: 275px;
+    max-height: 40px;
+}
+
+.logo img {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.logo h3 {
+    float: right;
+    line-height: 38px;
+    margin-left: 10px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.size {
+    float: left;
+    margin-top: 15px;
+}
+
+.size li {
+    float: left;
+    display: block;
+    margin-right: 15px;
+}
+
+.icon {
+    color: #ccc;
+    margin-top: 2px;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1.5em;
+    margin-right: .1em;
+    text-align: center;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+}
+
+.textbox{
+    float: right;
+    margin-top: 15px;
+    height: 40px;
+}
+
+.textbox img
+{
+    width: 1.5em;
+    color: #ccc;
+    margin-top: 2px;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1.5em;
+    margin-right: .1em;
+    text-align: center;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    vertical-align: middle;
+    margin-left: .4em;
+}
+
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background: transparent;
+}
+
+@media (max-width: 550px) {
+    .logo img {
+        display: none;
+    }
+    .logo h3 {
+        font-size: 14px;
+    }
+    .fixed-nav-bar {
+        padding: 0px 10px;
+    }
+}

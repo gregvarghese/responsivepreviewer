@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Lightweight Responsive Previewer</title>
+    <link rel="stylesheet" href="_css/styles.css">
+    <script type="text/javascript" src="_js/core.js"></script>
+</head>
+<body>
+    <nav class="fixed-nav-bar">
+        <div class="logo">
+            <img src="_img/logo.png"><h3>Responsive Previewer</h3>
+        </div>        
+        <ul class="size">
+            <li>
+                <span title="Desktop" id="L2" onclick="ShowDesktop('preview');" >
+                    <img class="icon" src="_img/desktop.png" alt="Desktop">
+                    <span class="i-name"></span>
+                </span>        
+            </li>
+            <li>
+                <span title="Tablet Landscape" id="tabletlandscape" onclick="ShowMobile('preview',1024,'TB1');" >
+                    <img class="icon" src="_img/tablet-landscape.png" alt="Tablet Landscape">
+                    <span class="i-name"></span>
+                </span>
+            </li>
+            <li>
+                <span title="Tablet Portrait" id="tabletportrait" onclick="ShowMobile('preview',768,'TB1');" >
+                    <img class="icon" src="_img/tablet-portrait.png" alt="Tablet Landscape">
+                    <span class="i-name"></span>
+                </span>
+            </li>
+
+            <li>
+                <span title="Mobile Landscape" id="mobilelandscape" onclick="ShowMobile('preview',480,'TB1');" >
+                    <img class="icon" src="_img/mobile-landscape.png" alt="Tablet Landscape">
+                     <span class="i-name"></span>
+                </span>
+            </li>
+
+            <li>
+                <span title="Mobile Portrait" id="mobileportrait" onclick="ShowMobile('preview',320,'TB1');" >
+                    <img class="icon" src="_img/mobile-portrait.png" alt="Tablet Landscape">
+                     <span class="i-name"></span>
+                </span>
+            </li>    
+        </ul>
+		<div class="textbox"><input type="text" name="url" id="url" class="url-field" placeholder="Enter URL here"><img src="_img/load.png" onclick="changeFrameURL('preview', document.getElementById('url').value)"></div>
+    </nav>
+    <center>
+        <iframe width="100%" height="92%" id="preview" src="http://www.gregoryvarghese.com"/>
+    </center>
+</body>
+</html>
